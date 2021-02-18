@@ -1,0 +1,28 @@
+---
+title: "hw 3"
+author: "adi"
+date: "17/02/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Question 6b
+
+```{r}
+resident_dist<-c(rep(50,100),rep(100,500),rep(200,200))
+n<-rpois(1000,50)
+t<-array(dim = 1)
+
+for(i in 1:length(n))
+{t[i] <- sum(sample(resident_dist,n[i]))}
+
+mean(t)
+```
+
+```{r}
+var(t)
+```
+
