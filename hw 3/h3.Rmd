@@ -1,6 +1,6 @@
 ---
 title: "hw 3"
-author: "adi"
+author: "Aditya Thakur"
 date: "17/02/2021"
 output: pdf_document
 ---
